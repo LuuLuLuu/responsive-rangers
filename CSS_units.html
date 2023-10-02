@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_Units.css">
+    <title>CSS Units</title>
+</head>
+<body>
+    <h1>Css Units</h1>
+    <p>CSS possui diversas unidades diferentes para expressar um comprimento.</p>
+
+    <div><h2>Medidas Absolutas</h2>
+        <ul>
+            <li>
+                <li class="px"><h2>px</h2>
+                    <h3>Píxels</h3>
+                    <p>Provavelmente você já conhece ou ouviu falar desse rapaz chamado Píxel. Píxel nada mais é do que os pequenos pontinhos luminosos da tela do seu monitor, celular, televisão, etc... Logo, o píxel é o menor elemento em um dispositivo de exibição!</p>
+            <li class="pt"><h2>pt</h2>
+                <h3>Pontos</h3>
+                <p>Em CSS, 1pt é aproximadamente 1,3333 pixels, ou 1/72 de polegada.
+                </p>
+                <p>Geralmente espera-se que essa medida seja utilizada em folhas de estilo para impressões, quando se precisa ter certeza do tamanho da fonte utilizada. Não é recomendada para a estilização em tela!</p>
+            </li><br>
+            <li class="in">
+                <h2 >in</h2>
+                <h3 >Polegadas</h3>
+                <p>Em CSS, 1in tem aproximadamente 96 pixels, ou cerca de 2,54 cm.                
+                </p>
+                <p>Polegada ou inch em inglês é mais uma unidade de medida que conhecemos do mundo das medidas absolutas - geralmente vemos elas quando queremos comprar uma nova TV ou monitor , mas essa unidade também existe no mundo Web.</p>
+            </li>
+            </li>
+                <h2 class="cm">cm / mm</h2>
+                <h3 class="cm">Centímetro e Milímetro</h3>
+                <p class="mm">Em CSS, 1cm é aproximadamente 37,8 pixels, ou cerca de 25,2/64 polegadas.
+                </p>
+                <p class="mm">Em CSS, 1mm é aproximadamente 3,78 pixels, ou 1/10 de centímetro.</p>
+                <p class="mm">Nós brasileiros, que adotamos o sistema métrico, conhecemos bem essas duas medidas, que são bastante utilizadas no dia a dia. Apesar de bastante comuns, tanto centímetro e milímetro são pouco usadas no CSS. Assim como o pt, o uso dessas duas é esperado para folhas de estilo para impressões (medidas mais precisas), evitando que elas sejam aplicadas para exibições em tela.</p>
+            </li><br>
+            <li class="pc"><h2>pc</h2>
+                <h3>Paica</h3>
+                <p>Em CSS, 1pc tem aproximadamente 16 pixels ou 1/6 de polegada.</p>
+                <p>Também uma unidade pouco usada no mundo web, a Paica também vem para o CSS sendo herdada da tipografia. Por não ser uma unidade amplamente conhecida, ela acaba sendo fadada ao esquecimento, mas é sempre importante conhecermos todas as ferramentas que estão à nossa disposição. A relação entre as unidades absolutas é:</p>
+            </li><br>
+            
+        </ul>
+    </div>
+    <div><h2>Unidades Relativas</h2>
+        <ul>
+            <li class="em"><h2>em</h2>
+                <h3>Ems</h3>
+                <p>Nesse nosso caso, para a div mais interna (id=filho), 1em será igual a 16px, seguindo a lógica, 2em será igual a 32px e assim por diante. Podemos colocar valores como 1.5 também! Nesse nosso caso, 1.5em será igual a 24px Quando expressamos tamanhos como margin, padding utilizando em, isso significa que eles serão relativos ao tamanho da fonte do elemento pai.</p>
+            
+            </li><br>
+            <li class="rem"><h2>rem, "root em"</h2>
+                <h3>Rems</h3>
+                <p>O REM vem como sucessor do EM e ambos compartilham a mesma lógica de funcionamento (font-size), porém a forma de implementação é diferente. Enquanto o em está diretamente relacionado ao tamanho da fonte do elemento pai, o rem está relacionado com o tamanho da fonte do elemento root (raiz), no caso, a tag.</p>
+            </li>
+            <li class="por"><h2>%</h2>
+                <h3>Porcentagem</h3>
+                <p>A porcentagem permite que criemos módulos que sempre vão se readaptar para ocupar a quantidade especificada. Por exemplo, se definirmos um elemento tendo um tamanho de 50%, independente do dispositivo em questão, esse módulo sempre ocupará metade do espaço que lhe cabe (caso esteja dentro de algum outro elemento).</p>
+            </li><br>
+            <li class="ex"><h2>ex</h2>
+                <h3>Ex</h3>
+                <p>Talvez você nunca tenha ouvido falar dessa unidade do CSS, mas ela existe. Diferentemente da forma como a EM e a REM funcionavam, essa unidade não se relaciona com o tamanho da fonte (font-size), mas com qual fonte está sendo utilizada naquele momento (font-family), mais especificamente ao tamanho do caractere x dessa fonte em questão (x-height).</p>
+            </li><br>
+            <li class="ch"><h2>Ch</h2>
+                <h3>Ch</h3>
+                <p>É comum acharmos definições que dizem que a frase acima se aplica para qualquer fonte, porém isso está errado. Como mencionei acima, a regra de 1ch = 1 caractere se aplica apenas se a fonte usada for monospace (largura fixa). Fontes com a largura variável, qualquer caractere pode ser mais largo ou menos largo que o zero ("0"), como podemos ver na imagem abaixo: </p>
+            </li><br>
+            <li class="vw"><h2>Vw</h2>
+                <h3>viewport width</h3>
+                <p>Voltando para o nosso querido vw, essa unidade se relaciona diretamente com a largura da viewport, onde 1vw representa 1% do tamanho da largura dessa área visível. A diferença entre vw e a % é bem semelhante a diferença entre em e rem, onde a % é relativa ao contexto local do elemento e o vw é relativo ao tamanho total da largura da viewport do usuário.</p>
+            </li><br>
+            <li class="vh"><h2>Vh</h2>
+                <h3>viewport height</h3>
+                <p>Essa unidade funciona da mesma forma que o vw, porém dessa vez, a referência será a altura e não a largura. Existem diversos exemplos práticos e interessantes de uso dessas duas unidades.</p>
+            </li><br>
+            <li class="vmin"><h2>Vmin</h2>
+                <h3>viewport minimun</h3>
+                <p>Imagine que estamos trabalhando com uma viewport de 1600px de altura e 900px de largura. Nesse caso, 1vmin terá o valor de 9px (1% da menor dimensão!), caso tenhamos 100vmin, esse será igual a 900px! Interessante né?    
+                </p>
+                <p>No caso acima, a menor dimensão foi a da largura, porém se tivéssemos 300px para altura e 1400px para largura, nosso valor de referência seria o 300px! Sempre a menor dimensão!</p>
+
+            </li><br>
+            <li class="vmax"><h2>Vmax</h2>
+                <h3>viewport maximum</h3>
+                <p>Seguindo a mesma base lógica da unidade anterior, o vmax terá como valor de referência a maior dimensão da viewport. Ou seja, utilizando o mesmo exemplo, se tivermos 1600px de altura e 900px de largura, 1vmax será equivalente a 16px!   
+                </p>
+                <p>No segundo exemplo ocorrerá a mesma inversão, tendo 300px para altura e 1400px para largura, 1vmax será equivalente a 14px. Dessa vez sempre será a maior dimensão!</p>
+            </li>
+        </ul>
+        <div>
+            <h2>Conclusão</h2>
+            <p>Como podemos perceber, existem várias unidades que podemos utilizar no mundo web, mas sempre surgem aquelas perguntas de quando tenho que utilizar? Qual a melhor? etc...</p>
+            <p>Não existe resposta certa nem errada para essas perguntas, infelizmente não temos uma regra de ouro para todas as situações. O uso dessas unidades depende de diversos fatores como equipe, preferência, familiaridade e assim por diante.</p>
+            <p>Também Temos como unidade de medidas: width, margin, padding, font-size, etc...</p>
+            <p>Tentei utilizar ao maxímo todas as CSS Units que encontrei no tempo de pesquisa.</p>'
+        </div>
+    </div>
+</body>
+</html>

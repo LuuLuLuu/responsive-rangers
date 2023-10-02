@@ -1,0 +1,119 @@
+.px {
+    background-color: rgb(39, 82, 224);
+    width: 800px;
+    height: 180px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.pt {
+    background-color: yellow;
+    width: 600pt;
+    height: 150pt;
+    padding: 10pt;
+    border-radius: 30pt;
+}
+
+.in {
+    background-color: yellow;
+    width: 8in;
+    height: 3in;
+    border-radius: 1in;
+    padding: 0.3in;
+    margin: 0.1in;
+    font-size: 0.2in;
+}
+
+.cm {
+    margin: 1cm;
+    font-size: 0.7cm;
+}
+.mm {
+    width: 200mm;
+    background-color: blue;
+    color: white;
+    padding: 2mm;
+    border-radius: 5mm;
+}
+.pc {
+    background-color: rgb(30, 189, 16);
+    width: 50pc;
+    height: 10pc;
+    padding: 3pc;
+    border-radius: 5pc;
+}
+
+
+
+.em {
+    background-color: rgb(224, 91, 39);
+    width: 50em;
+    height: 10em;
+    padding: 3em;
+    border-radius: 5em;
+}
+
+.rem {
+    background-color: rgb(224, 39, 131);
+    width: 50rem;
+    height: 10rem;
+    padding: 3rem;
+    border-radius: 5rem;
+}
+
+.por {
+    background-color: rgb(156, 59, 59);
+    width: 100%;
+    height: 30%;
+    padding: 2%;
+    border-radius: 20%;
+}
+
+.ex {
+    background-color: rgb(59, 156, 148);
+    width: 100ex;
+    height: 30ex;
+    padding: 4ex;
+    border-radius: 10ex;
+}
+
+.ch {
+    background-color: rgb(80, 241, 80);
+    width: 100ch;
+    height: 30ch;
+    padding: 4ch;
+    border-radius: 10ch;
+}
+
+.vw {
+    background-color: rgb(80, 203, 241);
+    width: 40vw;
+    height: 15vw;
+    padding: 2vw;
+    border-radius: 4vw;
+}
+
+.vh {
+    background-color: rgb(228, 80, 241);
+    width: 100vh;
+    height: 30vh;
+    padding: 4vh;
+    border-radius: 10vh;
+}
+
+.vmin {
+    background-color: rgb(80, 241, 160);
+    width: 100vmin;
+    height: 30vmin;
+    padding: 4vmin;
+    border-radius: 10vmin;
+}
+
+.vmax {
+    background-color: rgb(182, 80, 241);
+    width: 45vmax;
+    height: 20vmax;
+    padding: 4vmax;
+    border-radius: 10vmax;
+}
+
